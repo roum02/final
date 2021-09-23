@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Write</title>
+        <link rel="stylesheet" href="layout.css">
+        <script src="data.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!--헤더-->
+        <header>
+          <div class="logo"></div>
+        </header>
+
+        <!--네비-->
+        <nav>
+          <a class="nav_items" href="main.html">주접글 생성</a>
+          <a class="nav_items" href="write.html" id="this_page">편지 보내기</a>
+          <a class="nav_items" href="joke_bear.html">응원댄스</a>
+        </nav>
+
+        <section>
+            <h1>아무도 볼 수 없는 나만의 공간에서</h1>
+            <p>마음껏 주접을 떨어보세요!</p>
+
+            <div class="input_box">
+                <!--입력창-->
+                <textarea id="input_letter" onkeydown="resize_letter()" onkeyup="resize_letter()" placeholder="이곳에 주접 편지를 작성해보세요." autofocus="autofocus"></textarea>
+
+                <!--버튼-->
+                <button class="button" id="letter_button" onclick="save_letter(), mention2()">저장하기</button>
+            </div>
+            <div id="w_move"></div>
+            
+            <div id="list">
+              <script>
+                load_letter();
+            </script>
+            </div>
+
+        </section>
+    </body>
+</html>

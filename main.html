@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main</title>
+        <link rel="stylesheet" href="layout.css">
+        <script src="data.js"></script>
+        <script src="main.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <!--헤더-->
+        <header>
+          <div class="logo"></div>
+        </header>
+
+        <!--네비-->
+        <nav>
+          <a class="nav_items" href="main.html" id="this_page">주접글 생성</a>
+          <a class="nav_items" href="write.html">편지 보내기</a>
+          <a class="nav_items" href="joke_bear.html">응원댄스</a>
+        </nav>
+
+        <section>
+            <h1>쑥쓰러운 당신을 위한 추천 주접이에요!</h1>
+            <p>부끄러움이 많으시다구요?</p>
+            <p>유난히 내성적인 당신을 위해 준비했습니다.</p>
+            <p>비밀이 보장되는 나만의 공간에서</p> 
+            <p>마음껏 주접을 떨어보세요!😎</p>
+            
+
+            <div class="input_box">
+                <!--검색창-->
+                <input id="input_name" placeholder="이곳에 이름을 입력해 주세요." autofocus>
+                <!--버튼-->
+                <button class="button" onclick="add(), resize()">주접 떨기</button>
+            </div>
+
+            <!--멘트 추천 띄워주는 박스-->
+            <div id="r_box">
+                <textarea
+                    id="r_content"
+                    onclick="copy()"
+                    rows="1"
+                    readonly
+                    placeholder="이곳에서 추천 주접을 볼 수 있어요. 클릭하면 복사할 수 있어요."></textarea>
+                <div id="r_move"></div>
+            </div>
+        </section>
+    </body>
+</html>

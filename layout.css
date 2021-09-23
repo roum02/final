@@ -1,0 +1,217 @@
+/*배경*/
+body{
+  margin-top: 0px;
+  background-image: url('background.png');
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(180, 180, 180, 0.8);
+  box-shadow: 5px 5px 10px rgb(102, 102, 102);
+}
+
+/*p태그 마진 없애려고*/
+section p{
+  margin: 3px;
+  font-size: 14px;
+}
+
+nav{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgb(102, 102, 102);
+}
+
+.nav_items{
+  text-decoration: none;
+  color: black;
+}
+
+.nav_items:hover{
+  background-color: rgb(104, 104, 104, 0.3);
+}
+
+#this_page{
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+/*헤더*/
+.logo{
+  max-width: 100%;
+  height: 300px;
+  background-image: url('logo_1.png');
+  background-position: center;
+  background-size: cover;
+}
+
+
+#r_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+/*추천 박스*/
+#r_content{
+  text-align: center;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: auto;
+  width: 50rem;
+  color: rgb(104, 104, 104);
+  outline: none;
+
+  /*textarea 높이 자동조절*/
+  /*min-height: 1rem;*/
+  overflow-y: hidden;
+  resize: none;
+}
+
+@media(max-width:400px){
+  .input_box{display: grid; grid-template-columns: auto;}
+}
+
+/*편지 쓰기 제안 멘트*/
+#r_move{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+}
+
+#r_move:hover{
+  color: white;
+}
+
+/*편지 쓰기 버튼*/
+#move_button{
+  display: inline-block;
+  margin-top: 30px;
+  outline: none;
+}
+
+#move_button:hover{
+  background-color: darkgoldenrod;
+  color: white;
+  border: rgb(192, 163, 0) solid 2px;
+}
+
+/*검색창 div*/
+.input_box{
+  margin-top: 30px;
+}
+/*검색창*/
+#input_name {
+    border-radius: 10px;
+    border: gray solid 1px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 320px;
+    /*outline: none;*/
+}
+
+/*이름 입력 버튼*/
+.button{
+  width: 100px;
+  color:black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  outline:none;
+  padding: 1rem;
+  margin-left: 30px;
+}
+
+/*네비게이션*/
+.nav_items{
+  display: inline-block;
+  padding: 1rem;
+}
+
+/*편지 쓰기*/
+#input_letter{
+  padding: 20px;
+  width: 30rem;
+
+  /*textarea 높이 자동조절*/
+  /*min-height: 5rem;*/
+  overflow-y: hidden;
+  resize: none;
+}
+
+/*편지쓰기 버튼*/
+#letter_button{
+  position: absolute;
+  margin-top: 3px;
+  
+}
+
+/*write page*/
+
+/*버튼 누르면 페이지 이동할 거냐고 묻는 공간*/
+#w_move{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(104, 104, 104);
+}
+
+/*저장된 편지 싸고 있는 박스*/
+#list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100em;
+  padding: 10px;
+}
+
+/*몇 번째 편지인지 알려주는 list안의 텍스트*/
+.list_nth{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/*저장된 편지 보여주는 아이템*/
+.list_items{
+  background-color: #ececec;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+/*삭제하는 박스*/
+#del_box{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*삭제 버튼*/
+.del_btn{
+  margin-left: 10px;
+}
+
+/*농담곰 페이지*/
+#dance{
+  margin: 30px;
+}
+
+
